@@ -2,9 +2,10 @@ package pck1;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -15,11 +16,11 @@ public class BaseSetup {
 
 	public  void baseSetup() throws FileNotFoundException, IOException {
 
-		System.out.println("launching firefox browser");
+		System.out.println("launching chrome browser");
 		// System.setProperty("webdriver.gecko.driver",
 		// "D:\\Browsers\\geckodriver.exe");
-		System.setProperty("webdriver.gecko.driver", "D:\\test\\geckodriver.exe");
-		driver = new FirefoxDriver();// D:\test
+		System.setProperty("webdriver.chrome.driver", ".//Resource//chromedriver.exe");
+		driver = new ChromeDriver();// D:\test
 
 		wait = new WebDriverWait(driver, 60);
 
