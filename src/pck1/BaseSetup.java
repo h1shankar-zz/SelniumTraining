@@ -23,7 +23,7 @@ public class BaseSetup {
 		driver = new ChromeDriver();// D:\test
 
 		wait = new WebDriverWait(driver, 60);
-
+		driver.get("http://www.bhu.ac.in/");
 		driver.manage().window().maximize();
 
 	}

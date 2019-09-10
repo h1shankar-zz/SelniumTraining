@@ -3,12 +3,18 @@ package pck1;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class PopUpAuth extends BaseSetup
+public class PopUpAuth
  {
 
 	BaseSetup bs;
+	@BeforeTest
+	public void setUpBase()
+	{
+		bs =new BaseSetup();
+	}
 	
 	@Test
 	public void f1()
