@@ -6,7 +6,6 @@
       <class name="pck1.PopUpAuth">
         <methods>
           <include name="f1"/>
-          <include name="setUpBase"/>
         </methods>
       </class> <!-- pck1.PopUpAuth -->
     </classes>
